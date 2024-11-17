@@ -1,0 +1,103 @@
+:root {
+    --background-color: #1a1a1a;
+    --navbar-color: hsl(0, 0%, 18%);
+    --text-color: #ecf0f1;
+    --accent-color: #e74c3c;
+    --light-text-color: #e74c3c;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding-top: 76px;
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+}
+
+.navbar-brand img {
+    height: 5px;  /* Reduced to 20% of original 25px */
+    width: 5px;   /* Reduced to 20% of original 25px */  
+    border-radius: 20%;
+}
+
+.nav-link {
+    color: var(--light-text-color) !important;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: var(--navbar-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.resume-container {
+    background-color: var(--navbar-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Portfolio Styles */
+.portfolio-item {
+    height: 100%;
+}
+
+.portfolio-item .card {
+    height: 100%;
+    transition: transform 0.3s ease;
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-item .card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item .card-body {
+    padding: 1.5rem;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+}
+
+.tech-stack .badge {
+    margin-right: 0.5rem;
+    background-color: var(--accent-color) !important;
+}
+
+.card-title {
+    color: var(--light-text-color);
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
